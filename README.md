@@ -1,2 +1,4 @@
 # gmap
-next gen network scanner 
+collection of network utilities
+network scanner 
+connections scanner
