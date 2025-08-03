@@ -1,4 +1,5 @@
 # services/fingerprint.py - Basic OS fingerprinting
+from services.device_detector import detect_os_device
 
 def detect_os_device(banner):
     """Simple heuristic OS/device detection from banner."""
@@ -17,4 +18,5 @@ def detect_os_device_simple(banner):
     """Simple heuristic OS/device detection from banner only."""
     result = detect_os_device(banner)
     return f"{result['device_type']} ({result['os']})" if result['confidence'] > 0 else 'Unknown Device'
+
 
